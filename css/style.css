@@ -1,0 +1,414 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    /*background-color: crimson;*/
+}
+
+.start-screen {
+    position: relative;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 832px;
+}
+
+.start-screen img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.start-screen .logo {
+    position: relative;
+    font-size: 20px;
+    font-family: "MuseoSansCyrl";
+    color: rgb(255, 255, 255);
+    line-height: 1.5;
+    text-align: left;
+    left: 71px;
+    top: 79px;
+    width: 119px;
+    height: 49px;
+    z-index: 2;
+}
+
+.start-screen .menu {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    font-family: "Roboto";
+    color: rgb(255, 255, 255);
+    line-height: 2.75;
+    text-align: left;
+    position: relative;
+    left: 676px;
+    top: 52px;
+    width: 658px;
+    height: 15px;
+    z-index: 2;
+}
+
+/*.start-screen-filling{*/
+/*position: relative;*/
+/*left:*/
+/*}*/
+
+.start-screen-filling .intro {
+    font-size: 20px;
+    font-family: "MuseoSansCyrl";
+    color: rgb(255, 255, 255);
+    line-height: 2.5;
+    text-align: left;
+    position: relative;
+    left: 70px;
+    top: 200px;
+    width: 239px;
+    height: 19px;
+    z-index: 2;
+}
+
+.start-screen-filling .intro-body {
+    font-size: 36px;
+    font-family: "MuseoSansCyrl";
+    color: rgb(255, 255, 255);
+    line-height: 1.222;
+    text-align: left;
+    position: relative;
+    left: 70px;
+    top: 230px;
+    width: 642px;
+    height: 77px;
+    z-index: 2;
+}
+
+.start-screen-filling button {
+    background-color: rgb(21, 50, 79);
+    position: relative;
+    border-radius: 12px;
+    border: black;
+    left: 75px;
+    top: 300px;
+    width: 191px;
+    height: 55px;
+    z-index: 2;
+    font-size: 16px;
+
+}
+
+.start-screen-filling button a {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    font-family: "Roboto";
+    color: rgb(255, 255, 255);
+    line-height: 1.2;
+    text-align: center;
+    text-decoration: none;
+}
+
+.start-screen-filling button:hover {
+    background-color: rgb(47, 139, 217);
+    position: relative;
+    border-radius: 12px;
+    border: black;
+    left: 75px;
+    top: 300px;
+    width: 191px;
+    height: 55px;
+    z-index: 2;
+    font-size: 16px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 30px;
+    font-family: "MuseoSansCyrl";
+    color: rgb(21, 50, 79);
+    line-height: 1.467;
+}
+
+.mission {
+    padding: 20px;
+}
+
+.mission p {
+    font-size: 24px;
+    font-family: "Roboto";
+    color: rgb(8, 4, 4);
+    line-height: 1.5;
+    text-align: center;
+    padding: 30px;
+    top: 130px;
+}
+
+.top-screen-filling {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+    padding: 30px;
+}
+
+.top-screen-filling div {
+    position: relative;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+top-screen-filling img {
+    z-index: 1;
+}
+
+.top-screen-filling p {
+    font-size: 24px;
+    font-family: "Roboto";
+    color: rgb(255, 255, 255);
+    line-height: 1.833;
+    text-align: left;
+    position: relative;
+    left: 20px;
+    top: -60px;
+    width: 250px;
+    height: 17px;
+    z-index: 2;
+}
+
+.virtual-guide {
+    position: relative;
+    width: 100%;
+    height: 832px;
+}
+
+.virtual-guide img {
+    position: relative;
+    width: 100%;
+    z-index: 1;
+}
+
+.virtual-guide h2 {
+    position: relative;
+    top: 80px;
+    color: rgb(255, 255, 255);
+    z-index: 2;
+}
+
+.virtual-guide p {
+    font-size: 18px;
+    font-family: "Roboto";
+    color: rgb(255, 255, 255);
+    line-height: 1.667;
+    text-align: left;
+    position: relative;
+    left: 70px;
+    top: -450px;
+    width: 420px;
+    height: 100px;
+    z-index: 2;
+}
+
+.virtual-guide button {
+    background-color: rgb(21, 50, 79);
+    position: relative;
+    border-radius: 12px;
+    border: black;
+    top: -450px;
+    left: 70px;
+    width: 191px;
+    height: 55px;
+    z-index: 2;
+    font-size: 16px;
+}
+
+.virtual-guide button a {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    font-family: "Roboto";
+    color: rgb(255, 255, 255);
+    line-height: 1.2;
+    text-align: center;
+    text-decoration: none;
+}
+
+.virtual-guide button:hover {
+    background-color: rgb(47, 139, 217);
+    position: relative;
+    border-radius: 12px;
+    border: black;
+    left: 70px;
+    width: 191px;
+    height: 55px;
+    z-index: 2;
+    font-size: 16px;
+}
+
+.news {
+    position: relative;
+}
+
+.news-filling {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.news-filling div {
+    width: 700px;
+}
+
+.news-filling p {
+    padding: 20px;
+    font-size: 20px;
+    font-family: "Myriad Pro";
+    color: rgb(21, 50, 79);
+    line-height: 1.4;
+    text-align: left;
+    z-index: 2;
+}
+
+.news h2 {
+    padding: 30px;
+}
+
+.news-filling button {
+    background-color: rgb(21, 50, 79);
+    border-radius: 12px;
+    position: relative;
+    border: black;
+    left: 20px;
+    top: 100px;
+    width: 191px;
+    height: 55px;
+    padding: 20px;
+    z-index: 2;
+    font-size: 16px;
+}
+
+.news-filling button a {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    font-family: "Roboto";
+    color: rgb(255, 255, 255);
+    line-height: 1.2;
+    text-align: center;
+    text-decoration: none;
+}
+
+.news-filling button:hover {
+    background-color: rgb(47, 139, 217);
+    border-radius: 12px;
+    border: black;
+    position: relative;
+    left: 20px;
+    top: 100px;
+    width: 191px;
+    height: 55px;
+    z-index: 2;
+    font-size: 16px;
+}
+
+.footer {
+    position: relative;
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+    height: 300px;
+    background: #253d55;
+}
+
+.networks {
+    flex: 1;
+    position: relative;
+    left: 50px;
+    top: 100px;
+    height: 100px;
+}
+
+.networks h2 {
+    color: white;
+    text-align: left;
+}
+
+.networks img {
+    padding: 10px;
+    position: relative;
+    left: 50px;
+}
+
+.footer-menu {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.footer-menu div {
+    font-size: 14px;
+    font-family: "Roboto";
+    color: rgb(255, 255, 255);
+    line-height: 2;
+    text-align: left;
+    padding: 15px;
+}
+
+
+
+
+
